@@ -1,0 +1,32 @@
+.Bitcoin-1 {
+    position: absolute;
+    background: url(assets/img/bg/bitcoin-1.png);
+    transform: rotate(30deg);
+}
+
+.Bitcoin-1 {
+    width: 97px;
+    height: 108px;
+    left: 47px;
+    top: 95px;
+}
+
+
+@media (min-width: 744px) and (max-width: 1439px) {
+    .Bitcoin-1 {
+        width: 66px;
+        height: 73px;
+        left: 75px;
+        top: 118px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 743px) {
+    .Bitcoin-1 {
+        width: 45px;
+        height: 50px;
+        left: 12px;
+        top: 118px;
+    }
+}
+

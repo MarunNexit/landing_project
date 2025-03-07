@@ -1,0 +1,62 @@
+.button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 32px;
+    gap: 10px;
+
+    min-width: 162px;
+
+    color: var(--gray-10);
+    background: var(--accented-gradient);
+    border-radius: 10px;
+    border: 1px var(--gray-0) ;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.long-button {
+    min-width: 290px;
+}
+
+.button:focus {
+    background: var(--accented-gradient-button-focus);
+    outline: none;
+}
+
+.button:active {
+    background: var(--accented-gradient);
+}
+
+.button:disabled {
+    background: var(--gray-60);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.button-get-in-touch {
+    padding: 13px 32px;
+    max-width: 162px;
+    /*    width: 162px;
+        height: 48px;*/
+}
+
+.button-get-started {
+    padding: 20px 48px;
+    max-width: 186px;
+    /*    width: 186px;
+        height: 62px;*/
+}
+
+@media (min-width: 744px) and (max-width: 1439px) {
+
+}
+
+@media (min-width: 375px) and (max-width: 743px) {
+    .button-get-started{
+        max-width: none;
+        width: 100% !important;
+    }
+}

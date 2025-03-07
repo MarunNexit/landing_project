@@ -1,0 +1,154 @@
+:root {
+    /* Font Family */
+    --font-primary: 'Inter', sans-serif;
+
+    /* Font Sizes */
+    --h1-size: 85px;
+    --h2-size: 50px;
+    --h3-size: 32px;
+    --h4-size: 28px;
+    --h5-size: 20px;
+    --button-text-size: 16px;
+    --body-text-size: 16px;
+    --body-small-text-size: 14px;
+    --small-text-size: 12px;
+
+    /* Font Weights */
+    --font-black: 900;
+    --font-semi-bold: 600;
+    --font-regular: 400;
+
+    /* Line Heights */
+    --line-height-130: 130%;
+    --line-height-140: 140%;
+}
+
+/* Base styles */
+body {
+    font-family: var(--font-primary), sans-serif;
+    font-size: var(--body-text-size);
+    font-weight: var(--font-regular);
+    line-height: var(--line-height-140);
+
+    background-color: var(--gray-bg);
+    color: var(--gray-0);
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Headings */
+h1 {
+    font-size: var(--h1-size);
+    font-weight: var(--font-black);
+    line-height: var(--line-height-130);
+
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: var(--h2-size);
+    font-weight: var(--font-black);
+    line-height: var(--line-height-130);
+
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: var(--h3-size);
+    font-weight: var(--font-semi-bold);
+    line-height: var(--line-height-130);
+
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-size: var(--h4-size);
+    font-weight: var(--font-black);
+    line-height: var(--line-height-130);
+
+    margin: 0;
+    padding: 0;
+}
+
+h5 {
+    font-size: var(--h5-size);
+    font-weight: var(--font-semi-bold);
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Body text */
+p {
+    font-size: var(--body-text-size);
+    font-weight: var(--font-regular);
+    line-height: var(--line-height-140);
+
+    margin: 0;
+    padding: 0;
+}
+
+.small-text {
+    font-size: var(--small-text-size);
+    font-weight: var(--font-semi-bold);
+    line-height: var(--line-height-140);
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Buttons */
+button {
+    font-size: var(--button-text-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.container{
+    margin: 0 130px 130px 130px;
+    padding: 0;
+}
+
+.container-block{
+    max-width: 1184px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+
+@media (min-width: 744px) and (max-width: 1439px) {
+    :root {
+        --h1-size: 40px;
+        --h2-size: 32px;
+    }
+
+    .container{
+        margin: 0 48px 92px 48px;
+    }
+
+    .container-block{
+        gap: 160px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 743px) {
+    /*change*/
+    :root {
+        --h1-size: 32px;
+        --h2-size: 32px;
+    }
+
+    .container{
+        margin: 0 17px 78px 17px;
+    }
+
+    .container-block{
+        gap: 120px;
+    }
+}

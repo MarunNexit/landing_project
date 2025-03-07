@@ -1,0 +1,268 @@
+<html lang="">
+<head>
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/components/buttons.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/backgrounds.css">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/list-section.css">
+    <link rel="stylesheet" href="css/components/list.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/members.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="container-block">
+            <section class="hero">
+                <header class="hero-header">
+                    <div class="logo">
+                        <img src="assets/img/logo.svg" alt="Logo" class="logo-img">
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Token Sale</a></li>
+                            <li><a href="#">FAQ`s</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Bloq</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-buttons">
+                        <button class="button button-get-in-touch">Get In Touch</button>
+
+                        <div class="burger-menu" onclick="toggleMenu()">
+                            <img src="assets/img/menu/burger.svg" alt="Menu">
+                        </div>
+                    </div>
+
+
+                    <div class="mobile-menu" id="mobileMenu">
+
+                        <img class="close-btn"  src="assets/img/menu/close.svg" alt="Close" onclick="toggleMenu()">
+                        <div class="burger-menu-list">
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Service</a></li>
+                                <li><a href="#">Token Sale</a></li>
+                                <li><a href="#">FAQ`s</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Bloq</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <div class="hero-content">
+                    <div class="text-block-container">
+                        <div class="text-block">
+                            <h1>Own Your Crypto</h1>
+                            <div class="info-container">
+                                <h1>Adventure</h1>
+                                <div class="info-block">
+                                    <p>Lorem ipsum treras.</p>
+                                </div>
+                            </div>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+                        </div>
+                        <button class="button button-get-started" >Get Started</button>
+                    </div>
+                    <aside class="cards">
+                        <img src="assets/img/cards.webp" alt="Hero Image">
+                    </aside>
+
+                    <!--<div class="cards">
+                        <img src="assets/img/cards.webp" alt="Hero Image">
+                    </div>-->
+                </div>
+            </section>
+
+            <section class="token-section">
+                <div class="token-block">
+                    <div>
+                        <h5 class="token-title">Our Token</h5>
+                        <h2 class="token-seal">Token Seal</h2>
+                    </div>
+
+                    <p class="token-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
+                </div>
+
+                <div class="token-cards-section">
+                    <div class="token-card">
+                        <div class="icon">
+                            <img src="assets/img/token-card/profit-card.svg" alt="Logo" >
+                        </div>
+                        <div class="token-card-text">
+                            <h3 class="token-card-title">Enjoy The Profit</h3>
+                            <p class="token-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl praesent massa ullamcorper ultrices eu tortor...</p>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <div class="icon">
+                            <img src="assets/img/token-card/customer-support-card.svg" alt="Logo" >
+                        </div>
+                        <div class="token-card-text">
+                            <h3 class="token-card-title">Enjoy The Profit</h3>
+                            <p class="token-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl praesent massa ullamcorper ultrices eu tortor...</p>
+                        </div>
+                    </div>
+                    <div class="token-card">
+                        <div class="icon">
+                            <img src="assets/img/token-card/confirmation-card.svg" alt="Logo" >
+                        </div>
+                        <div class="token-card-text">
+                            <h3 class="token-card-title">Enjoy The Profit</h3>
+                            <p class="token-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl praesent massa ullamcorper ultrices eu tortor...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="list-container">
+                <div class="list-text">
+                    <h2>Lorem ipsum hasat promotiv sedan depatologi tenes.</h2>
+                    <p>Lorem ipsum sosm niliga syntris.</p>
+                </div>
+
+                <div class="list-elements">
+                    <div class="element"><h5>1Lorem ipsum dorade boktig till geosylig postmodern.</h5></div>
+                    <div class="element"><h5>2Lorem ipsum dorade boktig till geosylig postmodern.</h5></div>
+                    <div class="element"><h5>3Lorem ipsum dorade boktig till geosylig postmodern.</h5></div>
+                    <div class="element"><h5>4Lorem ipsum dorade boktig till geosylig postmodern.</h5></div>
+                    <div class="element"><h5>5Lorem ipsum dorade boktig till geosylig postmodern.</h5></div>
+                    <div class="element"><h5>6Lorem ipsum dorade boktig till geosylig postmodern.</h5></div>
+                    <div class="element"><h5>7Lorem ipsum dorade boktig till geosylig postmodern.</h5></div>
+                </div>
+            </section>
+
+            <section class="services-section">
+                <div class="service-main-card">
+                    <h5>Our Services</h5>
+                    <h2>Our Services for You</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <img src="assets/img/service-card/trade.svg" alt="Img">
+                    </div>
+                    <div class="service-card-text">
+                        <h3 class="service-card-title">Enjoy The Profit</h3>
+                        <div class="service-card-description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl praesent massa ullamcorper ultrices eu tortor...</p></div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <img src="assets/img/service-card/cash.svg" alt="Img">
+                    </div>
+                    <div class="service-card-text">
+                        <h3 class="service-card-title">Bitcoin Escrow Service</h3>
+                        <p class="service-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl praesent massa ullamcorper ultrices eu tortor...</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <img src="assets/img/service-card/wallet.svg" alt="Img">
+                    </div>
+                    <div class="service-card-text">
+                        <h3 class="service-card-title">Secure Transactions</h3>
+                        <p class="service-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl praesent massa ullamcorper ultrices eu tortor...</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <img src="assets/img/service-card/cash.svg" alt="Img">
+                    </div>
+                    <div class="service-card-text">
+                        <h3 class="service-card-title">Fast Payments</h3>
+                        <p class="service-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl praesent massa ullamcorper ultrices eu tortor...</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <img src="assets/img/service-card/wallet.svg" alt="Img">
+                    </div>
+                    <div class="service-card-text">
+                        <h3 class="service-card-title">Reliable Support</h3>
+                        <p class="service-card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisl praesent massa ullamcorper ultrices eu tortor...</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="member-section relative">
+                <div class="member-container">
+                    <div class="member-left-column">
+                        <h5 class="member-team-title">Team</h5>
+                        <div class="member-details">
+                            <h2 class="member-title">Member of our expert team</h2>
+                            <p class="member-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus.
+                            </p>
+                            <button class="button button-get-started long-button">Get Started</button>
+                        </div>
+                    </div>
+
+                    <div class="member-right-column">
+                        <h5 class="member-info-title">Lorem ipsum treras dekalig.</h5>
+                        <p class="member-info-description">
+                            Lorem ipsum fulparkerare krollipsum diska didebelt respektive spevis plus krofenatipsum.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <footer class="footer">
+                <div class="footer-container">
+                    <div class="footer-left">
+                        <div class="footer-left-frame" >
+                            <div class="footer-logo">
+                                <img src="assets/img/logo.svg" alt="Logo" class="logo-img">
+                            </div>
+                            <p class="footer-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+                            </p>
+                            <div class="email-input">
+                                <label>
+                                    <input type="email" placeholder="Email Address">
+                                </label>
+                                <button type="submit">
+                                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.90909 2L13 7M13 7L7.90909 12M13 7L1 7" stroke="#495057" stroke-width="2" stroke-linecap="square"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <nav class="footer-nav">
+                            <a href="#">About</a>
+                            <a href="#">Service</a>
+                            <a href="#">Token Sale</a>
+                            <a href="#">FAQ`s</a>
+                            <a href="#">Team</a>
+                            <a href="#">Blog</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer-row">
+                    <p class="footer-copyright">© 2021 GPD Holdings, LLC FinCEN MSB</p>
+                    <p class="footer-policy">Privacy Policy and Terms of Service</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <img src="assets/img/bg/bitcoin-1.png" alt="Bitcoin" class="Bitcoin-1">
+
+</body>
+</html>

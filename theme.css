@@ -1,0 +1,36 @@
+:root {
+    /* Primary Colors */
+    /* --primary-100: #FFCF0F; */
+
+    --primary-100: #B982FF;
+
+    /* Gradient */
+    --blue-light: #18C8FF;
+    --blue-dark: #933FFE;
+    --accented-gradient: linear-gradient(225deg, var(--blue-light) 14.89%, var(--blue-dark) 85.85%);
+    --accented-gradient-button: linear-gradient(225deg, var(--blue-light) 14.89%, var(--blue-dark) 85.85%);
+    --accented-gradient-button-focus: linear-gradient(226.55deg, var(--blue-light) 7%, var(--blue-dark) 29.53%);
+    --radial-gradient-info-block: radial-gradient(189.96% 1058.34% at 110.22% -60.42%, rgba(72, 205, 255, 0) 0%, rgba(132, 112, 255, 0.7) 100%), radial-gradient(62.64% 89.41% at -5.37% -16.9%, rgba(61, 165, 245, 0.8) 0%, rgba(62, 69, 238, 0) 100%);
+
+    /* Gray Scale */
+    --gray-bg: #0B0B0F;
+    --gray-100: #212529;
+    --gray-80: #495057;
+    --gray-60: #6E7584;
+    --gray-50: #ADB5BD;
+    --gray-40: #CED4DA;
+    --gray-30: #E9ECEF;
+    --gray-20: #f1f3f5;
+    --gray-10: #F8F9FA;
+    --gray-0: #FFFFFF;
+
+    /* Gray Scale */
+    --gray-card-title: #E9EEF4;
+    --gray-card-text: #E8E8E8;
+
+    /* System Colors */
+    --error: #991D21;
+    --info: #4F75FF;
+    --warning: #FF9F4C;
+    --success: #7EC136;
+}

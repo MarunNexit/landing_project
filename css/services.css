@@ -1,0 +1,117 @@
+.services-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    border: #7EC136 1px solid;
+}
+
+.service-main-card, .service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: linear-gradient(180deg, rgba(223, 29, 255, 0.2) 0%, rgba(72, 205, 255, 0) 100%),
+    linear-gradient(180deg, rgba(41, 46, 75, 0.375) 0%, rgba(48, 58, 120, 0.5) 100%);
+    max-width: 330px;
+    min-height: 270px;
+    backdrop-filter: blur(50px);
+    border-radius: 25px;
+}
+
+.service-main-card {
+    padding: 27px 26px;
+    justify-content: center;
+    align-items: flex-start;
+}
+.service-main-card h5 {
+    max-width: 111px;
+    color: var(--primary-100);
+    margin: 0;
+}
+.service-main-card h2 {
+    color: var(--gray-0);
+}
+.service-main-card p {
+    font-size: 16px;
+    color: var(--gray-30);
+    line-height: var(--line-height-140);
+}
+.service-card {
+    align-items: center;
+    text-align: center;
+    padding: 32px 24px;
+}
+
+.service-card .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(111.14% 111.14% at 8.37% 0%, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(2.5px);
+    border-radius: 50%;
+
+    margin: 0;
+    padding: 0;
+}
+
+.service-card-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    gap: 16px;
+}
+.service-card-title {
+    color: var(--gray-0);
+}
+.service-card-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: var(--body-text-size);
+    color: var(--gray-50);
+    flex-grow: 1;
+}
+
+
+@media (min-width: 744px) and (max-width: 1439px) {
+
+    .service-main-card, .service-card {
+        min-height: 200px;
+        max-width: 280px;
+    }
+
+    .service-main-card h2, .service-card-title {
+        font-size: 24px;
+    }
+
+    .service-card-title {
+        font-weight: var(--font-semi-bold);
+        line-height: var(--line-height-130);
+    }
+}
+
+@media (min-width: 375px) and (max-width: 743px) {
+
+    .service-main-card, .service-card {
+        min-height: 160px;
+        max-width: 280px;
+    }
+
+    .service-main-card h2 {
+        font-size: 24px;
+    }
+
+    .service-card-title {
+        font-size: 20px;
+        font-weight: var(--font-semi-bold);
+        line-height: var(--line-height-130);
+    }
+
+    .service-card-description{
+        font-size: var(--body-small-text-size);
+    }
+}

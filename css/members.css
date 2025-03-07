@@ -1,0 +1,115 @@
+/* Section container */
+.member-section {
+    position: relative;
+    width: 100%;
+    min-height: 577px;
+    background-position: right bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+    border: #7EC136 1px solid;
+}
+
+.member-container {
+    border: #7EC136 1px solid;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.member-left-column {
+    max-width: 542px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    padding: 130px 0 130px 0;
+}
+
+.member-team-title {
+    color: var(--primary-100);
+}
+
+.member-details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    border: 1px solid #7EC136;
+}
+
+.member-title {
+
+}
+
+.member-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #E8E8E8;
+    line-height: 140%;
+}
+
+
+.member-right-column {
+    position: absolute;
+    max-width: 212px;
+    height: auto;
+
+    right: 5%;
+    top: 338px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 30px;
+    gap: 27px;
+    background: radial-gradient(56.01% 71.16% at 102.6% 109.78%, rgba(223, 29, 255, 0.7) 0%, rgba(72, 205, 255, 0) 100%),
+    radial-gradient(62.64% 89.41% at -5.37% -16.9%, rgba(61, 165, 245, 0.8) 0%, rgba(62, 69, 238, 0) 100%),
+    linear-gradient(97.94deg, rgba(41, 46, 75, 0.5) 0%, rgba(41, 46, 75, 0.25) 100%, rgba(48, 58, 120, 0.5) 100%);
+    box-shadow: 0 4px 71px rgba(180, 180, 180, 0.3);
+    backdrop-filter: blur(50px);
+    border-radius: 25px;
+}
+
+.member-info-title {
+    color: var(--gray-0);
+}
+
+.member-info-description {
+    font-size: var(--body-text-size);
+    font-weight: var(--font-regular);
+    color: var(--gray-0);
+    line-height: var(--line-height-140);
+}
+
+
+@media (min-width: 744px) and (max-width: 1439px) {
+    .member-title {
+        font-size: 40px;
+    }
+
+    .member-right-column {
+        right: 5%;
+    }
+
+}
+
+@media (min-width: 375px) and (max-width: 743px) {
+    .member-title {
+        font-size: 32px;
+    }
+
+    .member-right-column {
+        right: 5%;
+    }
+
+    .member-left-column{
+        padding: 0;
+        height: 100%;
+    }
+}
