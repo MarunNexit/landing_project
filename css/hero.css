@@ -203,7 +203,7 @@ nav.menu ul li a {
 
 }
 
-@media (min-width: 375px) and (max-width: 743px) {
+@media (max-width: 743px) {
 
     .hero-content{
         flex-direction: column-reverse;
@@ -235,6 +235,10 @@ nav.menu ul li a {
 
     .burger-menu {
         display: block;
+    }
+
+    .text-block-container{
+        min-width: 0;
     }
 
 }

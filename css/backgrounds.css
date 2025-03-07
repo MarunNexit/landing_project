@@ -21,7 +21,7 @@
     }
 }
 
-@media (min-width: 375px) and (max-width: 743px) {
+@media (max-width: 743px) {
     .Bitcoin-1 {
         width: 45px;
         height: 50px;

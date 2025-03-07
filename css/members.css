@@ -99,7 +99,7 @@
 
 }
 
-@media (min-width: 375px) and (max-width: 743px) {
+@media (max-width: 743px) {
     .member-title {
         font-size: 32px;
     }

@@ -94,7 +94,7 @@
     }
 }
 
-@media (min-width: 375px) and (max-width: 743px) {
+@media (max-width: 743px) {
 
     .service-main-card, .service-card {
         min-height: 160px;

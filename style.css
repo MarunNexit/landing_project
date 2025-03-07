@@ -137,7 +137,7 @@ button {
     }
 }
 
-@media (min-width: 375px) and (max-width: 743px) {
+@media (max-width: 743px) {
     /*change*/
     :root {
         --h1-size: 32px;

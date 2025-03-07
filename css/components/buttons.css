@@ -54,7 +54,7 @@
 
 }
 
-@media (min-width: 375px) and (max-width: 743px) {
+@media (max-width: 743px) {
     .button-get-started{
         max-width: none;
         width: 100% !important;
