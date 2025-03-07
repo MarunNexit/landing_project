@@ -38,14 +38,14 @@
 
 .button-get-in-touch {
     padding: 13px 32px;
-    max-width: 162px;
+    width: 162px;
     /*    width: 162px;
         height: 48px;*/
 }
 
 .button-get-started {
     padding: 20px 48px;
-    max-width: 186px;
+    width: 186px;
     /*    width: 186px;
         height: 62px;*/
 }

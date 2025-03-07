@@ -107,8 +107,15 @@ button {
     font-weight: var(--font-semi-bold);
 }
 
-.container{
-    margin: 0 130px 130px 130px;
+.body-container{
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    margin: 0 0 130px 0;
+}
+
+.container {
+    margin: 0 130px 0 130px;
     padding: 0;
 }
 
@@ -120,7 +127,6 @@ button {
     flex-direction: column;
     gap: 200px;
 }
-
 
 @media (min-width: 744px) and (max-width: 1439px) {
     :root {
@@ -145,10 +151,14 @@ button {
     }
 
     .container{
-        margin: 0 17px 78px 17px;
+        margin: 0 17px 0 17px;
     }
 
-    .container-block{
+    .body-container {
+        margin: 0 0 78px 0;
+    }
+
+        .container-block{
         gap: 120px;
     }
 }

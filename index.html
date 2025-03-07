@@ -11,17 +11,21 @@
     <link rel="stylesheet" href="css/components/buttons.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/backgrounds.css">
+    <link rel="stylesheet" href="css/components/info-text-block.css">
     <link rel="stylesheet" href="css/tokens.css">
     <link rel="stylesheet" href="css/list-section.css">
     <link rel="stylesheet" href="css/components/list.css">
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/members.css">
+    <link rel="stylesheet" href="css/scroll-list.css">
+    <link rel="stylesheet" href="css/signup.css">
     <link rel="stylesheet" href="css/footer.css">
 
     <script src="script.js"></script>
 
 </head>
 <body>
+<div class="body-container">
     <div class="container">
         <div class="container-block">
             <section class="hero">
@@ -89,13 +93,13 @@
             </section>
 
             <section class="token-section">
-                <div class="token-block">
+                <div class="info-text-block">
                     <div>
-                        <h5 class="token-title">Our Token</h5>
-                        <h2 class="token-seal">Token Seal</h2>
+                        <h5 class="info-text-title">Our Token</h5>
+                        <h2 class="info-text-seal">Token Seal</h2>
                     </div>
 
-                    <p class="token-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
+                    <p class="info-text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
                 </div>
 
                 <div class="token-cards-section">
@@ -198,8 +202,15 @@
                     </div>
                 </div>
             </section>
+        </div>
+    </div>
 
-            <section class="member-section relative">
+    <section class="member-section relative">
+        <div class="member-bg"></div>
+        <div class="member-main-bg"></div>
+
+        <div class="container">
+            <div class="container-block">
                 <div class="member-container">
                     <div class="member-left-column">
                         <h5 class="member-team-title">Team</h5>
@@ -219,8 +230,40 @@
                         </p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="container-block">
+            <section class="scroll-list-section">
+                <div class="info-text-block">
+                    <div>
+                        <h5 class="info-text-title">Lorem ipsum</h5>
+                        <h2 class="info-text-seal">Amet pretium</h2>
+                    </div>
+
+                    <p class="info-text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leo ipsum aliquet turpis elit elit natoque varius eget facilisi. Amet rhoncus</p>
+                </div>
+
+
             </section>
 
+            <section class="signup-section">
+                <div class="signup-container">
+                    <div class="signup-content">
+                        <h5 class="signup-subtitle">Start Now</h5>
+                        <h3 class="signup-title">Sign up to learn more</h3>
+                        <p class="signup-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In amet amet integer.
+                        </p>
+                        <button class="button button-get-started" >Get Started</button>
+                    </div>
+                    <div class="signup-image">
+                        <img src="assets/img/signup/coins.png" alt="Stack of coins">
+                    </div>
+                </div>
+            </section>
 
 
             <footer class="footer">
@@ -262,6 +305,6 @@
         </div>
     </div>
     <img src="assets/img/bg/bitcoin-1.png" alt="Bitcoin" class="Bitcoin-1">
-
+</div>
 </body>
 </html>

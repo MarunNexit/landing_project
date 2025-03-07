@@ -64,6 +64,7 @@ nav.menu ul li a {
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
     transition: right 0.3s ease-in-out;
     padding: 40px 20px;
+    z-index: 1;
 }
 
 .mobile-menu ul {

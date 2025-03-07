@@ -2,30 +2,61 @@
 .member-section {
     position: relative;
     width: 100%;
-    min-height: 577px;
-    background-position: right bottom;
+    height: 577px;
+
+    background-position: calc(50% + 300px) 100%;
     background-size: contain;
     background-repeat: no-repeat;
 
     overflow: hidden;
-    border: #7EC136 1px solid;
+    border: pink 3px solid;
 }
 
-.member-container {
-    border: #7EC136 1px solid;
+.member-bg{
+    position: absolute;
+    width: 100vw;
+    height: 266px;
+    left: 0;
+    bottom: 0;
+    border: #7EC136 2px solid;
+
+    background: linear-gradient(1.51deg, #213763 0.08%, rgba(42, 58, 86, 0) 62.5%);
+}
+
+.member-main-bg{
+    position: absolute;
+    width: 100vw;
     height: 100%;
+    z-index: -1;
+    border: #7EC136 2px solid;
+
+    transform: scaleY(-1);
+    background:
+            radial-gradient(53.39% 67.78% at 100% 106.39%, rgba(223, 29, 255, 0.5) 0%, rgba(72, 205, 255, 0) 100%),
+            radial-gradient(62.64% 89.41% at -5.37% -16.9%, rgba(61, 165, 245, 0.5) 0%, rgba(62, 69, 238, 0) 100%),
+            linear-gradient(97.94deg, rgba(41, 46, 75, 0.375) 0%, rgba(41, 46, 75, 0.175) 100%, rgba(48, 58, 120, 0.5) 100%);
+}
+
+
+.member-container {
+    position: relative;
+    border: blue 1px solid;
+    height: 577px;
+    flex-grow: 1;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .member-left-column {
+    border: darkred 1px solid;
+
     max-width: 542px;
     display: flex;
     flex-direction: column;
     gap: 4px;
+    height: auto;
 
     padding: 130px 0 130px 0;
 }
@@ -42,17 +73,11 @@
     border: 1px solid #7EC136;
 }
 
-.member-title {
-
-}
-
 .member-description {
-    font-family: 'Inter', sans-serif;
     font-size: 16px;
     color: #E8E8E8;
     line-height: 140%;
 }
-
 
 .member-right-column {
     position: absolute;
@@ -60,7 +85,7 @@
     height: auto;
 
     right: 5%;
-    top: 338px;
+    bottom: 7%;
 
     display: flex;
     flex-direction: column;
@@ -106,10 +131,27 @@
 
     .member-right-column {
         right: 5%;
+        bottom: 18%;
     }
 
-    .member-left-column{
-        padding: 0;
-        height: 100%;
+    .member-left-column
+    {
+        margin: auto;
+        height: 680px;
     }
+
+    .member-section, .member-container, .member-details {
+        height: 800px;
+    }
+
+    .member-section{
+        background-position: 50%  calc(100% + 120px);
+        background-size: 1000px;
+    }
+
+    .member-details button {
+        margin-top: auto;
+    }
+
+
 }

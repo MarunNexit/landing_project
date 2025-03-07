@@ -1,4 +1,3 @@
-/* Section Container */
 .token-section {
     display: flex;
     flex-direction: column;
@@ -7,42 +6,6 @@
     border: #7EC136 1px solid;
 }
 
-/* Token Block */
-.token-block {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    text-align: center;
-    gap: 24px;
-
-    margin: 0;
-    padding: 0;
-}
-
-.token-title {
-    color: var(--primary-100);
-    font-weight: var(--font-semi-bold);
-    margin: 0;
-    padding: 0;
-}
-
-.token-seal {
-    color: var(--gray-0);
-    font-weight: var(--font-black);
-    margin: 0;
-    padding: 0;
-}
-
-.token-description {
-    color: var(--gray-30);
-    font-size: var(--body-text-size);
-    line-height: var(--line-height-140);
-    margin: 0;
-    padding: 0;
-}
-
-/* Cards Section */
 .token-cards-section {
     display: flex;
     justify-content: space-between;
@@ -50,15 +13,9 @@
 }
 
 .token-card {
-    max-width: 380px;
+    max-width: 306px;
     min-width: 200px;
-
-    background: radial-gradient(60.52% 85.11% at 9.86% -26.12%, rgba(223, 29, 255, 0.35) 0%, rgba(72, 205, 255, 0) 100%),
-    radial-gradient(65.97% 92.77% at 113.3% 120.61%, rgba(62, 238, 227, 0.5) 0%, rgba(62, 69, 238, 0) 100%),
-    linear-gradient(97.94deg, rgba(41, 46, 75, 0.225) 0%, rgba(37, 40, 58, 0.105) 100%, rgba(41, 46, 75, 0.105) 100%);
-
     border: 1px solid #FFFFFF;
-    backdrop-filter: blur(50px);
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -67,6 +24,30 @@
     padding: 40px 38px;
     gap: 24px;
     position: relative;
+    overflow: hidden;
+}
+
+.token-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+            radial-gradient(60.52% 85.11% at 9.86% -26.12%, rgba(223, 29, 255, 0.35) 0%, rgba(72, 205, 255, 0) 100%),
+            radial-gradient(65.97% 92.77% at 113.3% 120.61%, rgba(62, 238, 227, 0.5) 0%, rgba(62, 69, 238, 0) 100%),
+            linear-gradient(97.94deg, rgba(41, 46, 75, 0.225) 0%, rgba(37, 40, 58, 0.105) 100%, rgba(41, 46, 75, 0.105) 100%);
+
+    backdrop-filter: blur(50px);
+
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.token-card:nth-of-type(2)::before
+{
+    transform: scaleY(-1);
 }
 
 .token-card .icon {

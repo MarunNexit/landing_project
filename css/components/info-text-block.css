@@ -1,0 +1,33 @@
+.info-text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    text-align: center;
+    gap: 24px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.info-text-title {
+    color: var(--primary-100);
+    font-weight: var(--font-semi-bold);
+    margin: 0;
+    padding: 0;
+}
+
+.info-text-seal {
+    color: var(--gray-0);
+    font-weight: var(--font-black);
+    margin: 0;
+    padding: 0;
+}
+
+.info-text-description {
+    color: var(--gray-30);
+    font-size: var(--body-text-size);
+    line-height: var(--line-height-140);
+    margin: 0;
+    padding: 0;
+}
