@@ -1,12 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const container = document.querySelector(".hero-decor-container");
+    const heroContainer = document.querySelector(".hero-decor-container");
+    const tokenContainer = document.querySelector(".token-decor-container");
 
-    const svgElements = [
+    const heroSvgElements = [
         { src: "./assets/img/bg/bg-gradient-1.svg",
-            top: { default: "-10%", tablet: "-10%", mobile: "-10%" },
-            left: { default: "-20%", tablet: "-20%", mobile: "-20%" },
-            width: { default: "617px", tablet: "617px", mobile: "617px" },
-            height: { default: "520px", tablet: "520px", mobile: "520px" }
+            top: { default: "-25%", tablet: "-25%", mobile: "-25%" },
+            left: { default: "-25%", tablet: "-35%", mobile: "-50%" },
+            width: { default: "817px", tablet: "817px", mobile: "817px" },
+            height: { default: "720px", tablet: "720px", mobile: "720px" },
+            zIndex: -1,
         },
         { src: "./assets/img/bg/circles.svg",
             top: { default: "-10%", tablet: "20%", mobile: "20%" },
@@ -16,9 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         { src: "./assets/img/bg/bg-above-the-fold.svg",
             top: { default: "0", tablet: "0", mobile: "0" },
-            left: { default: "0", tablet: "0", mobile: "-50%" },
+            left: { default: "0", tablet: "-10%", mobile: "-50%" },
             width: { default: "full", tablet: "2000px", mobile: "2000px" },
-            height: { default: "909px", tablet: "909px", mobile: "909px" }
+            height: { default: "909px", tablet: "909px", mobile: "909px" },
+            zIndex: -2,
         },
         { src: "./assets/img/bg/bg-gradient-2.svg",
             top: { default: "250px", tablet: "280px", mobile: "370px" },
@@ -28,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             src: "./assets/img/bg/bitcoin-1.png",
-            top: { default: "95px", tablet: "118px", mobile: "118px" },
+            top: { default: "90px", tablet: "90px", mobile: "118px" },
             left: { default: "-10%", tablet: "3%", mobile: "0%" },
             width: { default: "97px", tablet: "66px", mobile: "45px" },
             height: { default: "108px", tablet: "73px", mobile: "50px" },
@@ -43,6 +46,24 @@ document.addEventListener("DOMContentLoaded", () => {
             rotate: "-10deg",
             zIndex: "1"
         },
+        {
+            src: "./assets/img/bg/lite-coin.png",
+            top: { default: "630px", tablet: "500px", mobile: "860px" },
+            left: { default: "5%", tablet: "25%", mobile: "45%" },
+            width: { default: "105px", tablet: "55px", mobile: "25px" },
+            rotate: "-47deg",
+            zIndex: "1"
+        },
+    ];
+
+    const tokenSvgElements = [
+        {
+            src: "./assets/img/bg/coins-bg.png",
+            top: { default: "0", tablet: "0", mobile: "0" },
+            left: { default: "-10%", tablet: "-10", mobile: "-10%" },
+            width: { default: "228px", tablet: "100px", mobile: "100px" },
+            zIndex: "1"
+        },
     ];
 
     function updateDecorSizes() {
@@ -55,40 +76,29 @@ document.addEventListener("DOMContentLoaded", () => {
             sizeCategory = "mobile";
         }
 
-        container.innerHTML = "";
+        heroContainer.innerHTML = "";
+        tokenContainer.innerHTML = "";
 
-        svgElements.forEach(({ src, top, left, width,height, rotate, zIndex , opacity}) => {
-            const decor = document.createElement("div");
-            decor.classList.add("decor-svg");
-            decor.style.backgroundImage = `url(${src})`;
-            decor.style.zIndex = zIndex ? zIndex : "-2";
-            decor.style.top = top[sizeCategory];
-            decor.style.left = left[sizeCategory];
+        function createDecorElement(container, elements) {
+            elements.forEach(({ src, top, left, width, height, rotate, zIndex, opacity }) => {
+                const decor = document.createElement("div");
+                decor.classList.add("decor-svg");
+                decor.style.backgroundImage = `url(${src})`;
+                decor.style.zIndex = zIndex || "-2";
+                decor.style.top = top[sizeCategory];
+                decor.style.left = left[sizeCategory];
+                decor.style.width = width[sizeCategory] === "full" ? getScreenWidth() : width[sizeCategory];
+                decor.style.height = height ? height[sizeCategory] : width[sizeCategory];
 
-            if(width[sizeCategory] === "full"){
-                decor.style.width = getScreenWidth();
-            }
-            else{
-                decor.style.width = width[sizeCategory];
-            }
+                if (opacity) decor.style.opacity = `${opacity}`;
+                if (rotate) decor.style.transform = `rotate(${rotate})`;
 
-            if(height){
-                decor.style.height = height[sizeCategory];
-            }
-            else {
-                decor.style.height = width[sizeCategory];
-            }
+                container.appendChild(decor);
+            });
+        }
 
-            if (opacity) {
-                decor.style.opacity = `${opacity}`;
-            }
-
-            if (rotate) {
-                decor.style.transform = `rotate(${rotate})`;
-            }
-
-            container.appendChild(decor);
-        });
+        createDecorElement(heroContainer, heroSvgElements);
+        createDecorElement(tokenContainer, tokenSvgElements);
     }
 
     updateDecorSizes();

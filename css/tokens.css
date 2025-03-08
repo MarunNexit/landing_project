@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     gap: 100px;
+    position: relative;
 }
 
 .token-cards-section {
