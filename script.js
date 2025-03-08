@@ -26,6 +26,30 @@ function toggleMenu() {
     mobileMenu.classList.toggle("active");
 }
 
+
+function adjustMarginForImage() {
+    const image = document.querySelector('.signup-image img');
+    const container = document.querySelector('.signup-image');
+    const container_main = document.querySelector('.signup-section');
+
+    const imageHeight = image.offsetHeight;
+    const containerHeight = container.offsetHeight;
+    if (imageHeight > containerHeight) {
+        const marginTop = imageHeight - containerHeight - 90;
+        if(marginTop > 0){
+            container_main.style.marginTop = `${marginTop}px`;
+        }
+    } else {
+        container_main.style.marginTop = '0';
+    }
+}
+
+
+
+
+window.addEventListener('load', adjustMarginForImage);
+window.addEventListener('resize', adjustMarginForImage);
+
 window.onload = function() {
     showRandomListElements();
     setRandomBackgroundImage();

@@ -3,7 +3,6 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    border: #7EC136 1px solid;
 }
 
 .service-main-card, .service-card {
@@ -40,21 +39,6 @@
     align-items: center;
     text-align: center;
     padding: 32px 24px;
-}
-
-.service-card .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 80px;
-    height: 80px;
-    background: radial-gradient(111.14% 111.14% at 8.37% 0%, rgba(255, 255, 255, 0.36) 0%, rgba(255, 255, 255, 0) 100%);
-    backdrop-filter: blur(2.5px);
-    border-radius: 50%;
-
-    margin: 0;
-    padding: 0;
 }
 
 .service-card-text {
@@ -95,7 +79,6 @@
 }
 
 @media (max-width: 743px) {
-
     .service-main-card, .service-card {
         min-height: 160px;
         max-width: 280px;

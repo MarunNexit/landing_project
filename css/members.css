@@ -9,7 +9,6 @@
     background-repeat: no-repeat;
 
     overflow: hidden;
-    border: pink 3px solid;
 }
 
 .member-bg{
@@ -18,8 +17,6 @@
     height: 266px;
     left: 0;
     bottom: 0;
-    border: #7EC136 2px solid;
-
     background: linear-gradient(1.51deg, #213763 0.08%, rgba(42, 58, 86, 0) 62.5%);
 }
 
@@ -28,7 +25,6 @@
     width: 100vw;
     height: 100%;
     z-index: -1;
-    border: #7EC136 2px solid;
 
     transform: scaleY(-1);
     background:
@@ -40,7 +36,6 @@
 
 .member-container {
     position: relative;
-    border: blue 1px solid;
     height: 577px;
     flex-grow: 1;
 
@@ -50,8 +45,6 @@
 }
 
 .member-left-column {
-    border: darkred 1px solid;
-
     max-width: 542px;
     display: flex;
     flex-direction: column;
@@ -69,8 +62,6 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-
-    border: 1px solid #7EC136;
 }
 
 .member-description {

@@ -35,6 +35,7 @@ body {
 
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /* Headings */
@@ -117,6 +118,7 @@ button {
 .container {
     margin: 0 130px 0 130px;
     padding: 0;
+    overflow: visible;
 }
 
 .container-block{
@@ -126,6 +128,7 @@ button {
     display: flex;
     flex-direction: column;
     gap: 200px;
+    overflow: visible;
 }
 
 @media (min-width: 744px) and (max-width: 1439px) {
@@ -135,7 +138,12 @@ button {
     }
 
     .container{
-        margin: 0 48px 92px 48px;
+        margin: 0 48px 0 48px;
+    }
+
+    .body-container {
+        margin: 0 0 92px 0;
+        gap: 160px;
     }
 
     .container-block{
@@ -156,9 +164,12 @@ button {
 
     .body-container {
         margin: 0 0 78px 0;
-    }
-
-        .container-block{
         gap: 120px;
     }
+
+    .container-block{
+        gap: 120px;
+    }
+
+
 }

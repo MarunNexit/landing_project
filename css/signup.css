@@ -4,7 +4,9 @@
     justify-content: center;
     padding: 60px 20px;
     position: relative;
-    max-height: 300px;
+    box-sizing: border-box;
+
+    height: auto;
 }
 
 .signup-section::before {
@@ -56,10 +58,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--gray-0);
 
-    width: 516px;
+    width: 400px;
     height: 300px;
+    margin: 0 50px;
     position: relative;
 }
 
@@ -76,10 +78,12 @@
     bottom: 0;
     width: 100%;
     height: auto;
+    transform: translateY(30px);
 }
 
 
 @media (min-width: 744px) and (max-width: 1439px) {
+
     .signup-title{
         font-size: 28px;
         font-weight: var(--font-semi-bold);
@@ -89,6 +93,10 @@
     .signup-content{
         min-width: 288px;
         margin-left: 60px;
+    }
+
+    .signup-image {
+        margin: 0;
     }
 }
 
@@ -106,6 +114,18 @@
 
     .signup-container {
         flex-direction: column-reverse;
+        gap: 40px;
+        height: auto;
     }
 
+    .signup-image {
+        margin: 0;
+        width: 100%;
+        max-width: 450px;
+        height: calc(50% * 100vw);
+    }
+
+    .signup-image img{
+        transform: translateY(0px);
+    }
 }
