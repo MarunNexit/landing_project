@@ -1,17 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const heroContainer = document.querySelector(".hero-decor-container");
     const tokenContainer = document.querySelector(".token-decor-container");
-    const container = document.querySelector(".container-block-decor-container");
-
-    const containerSvgElements = [
-        { src: "./assets/img/bg/bg-above-the-fold.svg",
-            top: { default: "0", tablet: "0", mobile: "0" },
-            left: { default: "0", tablet: "-10%", mobile: "-50%" },
-            width: { default: "full", tablet: "2000px", mobile: "2000px" },
-            height: { default: "909px", tablet: "909px", mobile: "909px" },
-            zIndex: -2,
-        },
-    ];
 
     const heroSvgElements = [
         { src: "./assets/img/bg/bg-gradient-1.svg",
@@ -26,6 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
             left: { default: "-50%", tablet: "-30%", mobile: "-180%" },
             width: { default: "2400px", tablet: "2200px", mobile: "2200px" },
             opacity: "0.5",
+        },
+        { src: "./assets/img/bg/bg-above-the-fold.svg",
+            top: { default: "0", tablet: "0", mobile: "0" },
+            left: { default: "0", tablet: "-10%", mobile: "-50%" },
+            width: { default: "3000px", tablet: "2000px", mobile: "2000px" },
+            height: { default: "909px", tablet: "909px", mobile: "909px" },
+            zIndex: -2,
         },
         { src: "./assets/img/bg/bg-gradient-2.svg",
             top: { default: "250px", tablet: "280px", mobile: "370px" },
@@ -103,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         createDecorElement(heroContainer, heroSvgElements);
         createDecorElement(tokenContainer, tokenSvgElements);
-        createDecorElement(container, containerSvgElements);
     }
 
     updateDecorSizes();
