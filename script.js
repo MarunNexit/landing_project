@@ -10,9 +10,9 @@ function showRandomListElements() {
 }
 
 const member_images = [
-    "../assets/img/member/member_1.png",
-    "../assets/img/member/member_2.png",
-    "../assets/img/member/member_3.png",
+    "assets/img/member/member_1.png",
+    "assets/img/member/member_2.png",
+    "assets/img/member/member_3.png",
 ];
 
 function setRandomBackgroundImage() {
@@ -43,8 +43,6 @@ function adjustMarginForImage() {
         container_main.style.marginTop = '0';
     }
 }
-
-
 
 
 window.addEventListener('load', adjustMarginForImage);
