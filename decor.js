@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function getScreenWidth() {
-    return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    return `${window.innerWidth + 100}px`|| `${document.documentElement.clientWidth + 100}px` || `${document.documentElement.clientWidth + 100}px`;
 }
 
 /*
