@@ -8,46 +8,28 @@
 
 .element {
     display: none;
-    /*
-    display: flex;
-    */
     justify-content: center;
     align-items: center;
     padding: 28px 63px;
     max-width: 560px;
     max-height: 100px;
-    background: radial-gradient(90.43% 1331.96% at 121.2% -190.31%, rgba(223, 29, 255, 0.35) 0%, rgba(72, 205, 255, 0) 100%);
+
+    background: radial-gradient(144.76% 629.53% at 106.71% 0%, rgba(223, 29, 255, 0.35) 0%, rgba(72, 205, 255, 0) 100%),
+    radial-gradient(65.97% 92.77% at 113.3% 120.61%, rgba(62, 238, 227, 0.5) 0%, rgba(62, 69, 238, 0) 100%),
+    linear-gradient(97.94deg, rgba(41, 46, 75, 0.225) 0%, rgba(37, 40, 58, 0.105) 100%, rgba(41, 46, 75, 0.105) 100%);
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(50px);
     border-radius: 70px;
+
     font-weight: 600;
     font-size: 20px;
     color: white;
     text-align: center;
+    transform: rotate(-180deg);
 }
 
-.element:nth-child(2) {
-    background: radial-gradient(72.77% 852.8% at 103.85% -80.61%, rgba(223, 29, 255, 0.35) 0%, rgba(72, 205, 255, 0) 100%);
-}
-
-.element:nth-child(3) {
-    background: radial-gradient(144.76% 629.53% at 106.71% 0%, rgba(223, 29, 255, 0.35) 0%, rgba(72, 205, 255, 0) 100%);
-}
-
-.element:nth-child(4) {
-    background: radial-gradient(171.43% 787.46% at 100% 33.67%, rgba(223, 29, 255, 0.35) 0%, rgba(72, 205, 255, 0) 100%);
-}
-
-.element:nth-child(5) {
-    background: radial-gradient(185.28% 594.66% at 93.38% 87.76%, rgba(223, 29, 255, 0.35) 0%, rgba(72, 205, 255, 0) 100%);
-}
-
-.element:nth-child(6) {
-    background: radial-gradient(189.03% 440.12% at 109.3% 118.88%, rgba(223, 29, 255, 0.35) 0%, rgba(72, 205, 255, 0) 100%);
-}
-
-.element:nth-child(7) {
-    background: radial-gradient(200.14% 731.93% at 111.98% 108.42%, rgba(223, 29, 255, 0.35) 0%, rgba(72, 205, 255, 0) 100%);
+.element h5 {
+    transform: rotate(-180deg);
 }
 
 @media (min-width: 744px) and (max-width: 1439px) {
