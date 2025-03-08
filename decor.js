@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         { src: "./assets/img/bg/bg-above-the-fold.svg",
             top: { default: "0", tablet: "0", mobile: "0" },
-            left: { default: "0", tablet: "-10%", mobile: "-50%" },
-            width: { default: "200%", tablet: "2000px", mobile: "2000px" },
+            left: { default: "-23%", tablet: "-50%", mobile: "-50%" },
+            width: { default: "full", tablet: "2000px", mobile: "2000px" },
             height: { default: "909px", tablet: "909px", mobile: "909px" },
             zIndex: -2,
         },
@@ -82,7 +82,14 @@ document.addEventListener("DOMContentLoaded", () => {
         function createDecorElement(container, elements) {
             elements.forEach(({ src, top, left, width, height, rotate, zIndex, opacity }) => {
                 const decor = document.createElement("div");
-                decor.classList.add("decor-svg");
+
+                if(width[sizeCategory] !== "full"){
+                    decor.classList.add("decor-svg");
+                }
+                else {
+                    decor.classList.add("decor-full-svg");
+                }
+
                 decor.style.backgroundImage = `url(${src})`;
                 decor.style.zIndex = zIndex || "-2";
                 decor.style.top = top[sizeCategory];
@@ -93,7 +100,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (opacity) decor.style.opacity = `${opacity}`;
                 if (rotate) decor.style.transform = `rotate(${rotate})`;
 
+
+
                 container.appendChild(decor);
+
             });
         }
 
@@ -106,7 +116,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function getScreenWidth() {
-    return `${window.innerWidth + 100}px`|| `${document.documentElement.clientWidth + 100}px` || `${document.documentElement.clientWidth + 100}px`;
+    return `${window.innerWidth + 500}px`|| `${document.documentElement.clientWidth + 500}px` || `${document.documentElement.clientWidth + 500}px`;
 }
 
 /*

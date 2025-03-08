@@ -13,3 +13,9 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.decor-full-svg{
+    position: absolute;
+    object-fit: fill;
+    background-repeat: repeat;
+}
