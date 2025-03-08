@@ -143,6 +143,7 @@
 
     .scroll-list {
         display: block;
+        height: 100%;
     }
 
     .scroll-element {
@@ -150,7 +151,9 @@
     }
 
     .scroll-element:nth-child(-n+3) {
-        display: block;
+        display: flex;
+        flex-wrap: nowrap;
+        min-width: 520px;
     }
 
     .scroll-element:nth-child(2) {
