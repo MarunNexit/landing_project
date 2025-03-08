@@ -10,9 +10,9 @@ function showRandomListElements() {
 }
 
 const member_images = [
-    "assets/img/member/member_1.png",
-    "assets/img/member/member_2.png",
-    "assets/img/member/member_3.png",
+    "/assets/img/member/member_1.png",
+    "/assets/img/member/member_2.png",
+    "/assets/img/member/member_3.png",
 ];
 
 function setRandomBackgroundImage() {
